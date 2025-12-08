@@ -5234,14 +5234,13 @@ if (publishSceneBtn && publishingModal) {
     });
 }
 
-function ClosePublishModal ()
-{
-   let modalElement = document.getElementById ('publishingModal');
-   let modalInstance = bootstrap.Modal.getInstance (modalElement);
-   if (modalInstance) 
-   {
-      modalInstance.hide ();
-   }
+function ClosePublishModal () {
+    const modalElement = document.getElementById('publishingModal');
+    if (!modalElement) return;
+
+    // Ensure we always have an instance to close even if it wasn't cached
+    const modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
+    modalInstance.hide();
 }
 
 // Update button states periodically to handle code editor focus changes
