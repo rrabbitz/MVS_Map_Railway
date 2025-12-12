@@ -97,7 +97,7 @@ Replace `<YOUR_PUBLIC_DOMAIN>` with your actual public domain (the value you set
   https://MYAPPURL.COM/config/fabric.msf.json
   ```
 
-Use this URL in the RP1 Developer Center to attach your Fabric to RP1.
+Use this URL in the RP1 Developer Center to attach your Fabric to RP1. 
 
 ## License
 
