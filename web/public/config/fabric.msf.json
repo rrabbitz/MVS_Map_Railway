@@ -1,0 +1,13 @@
+{
+   "map": {
+      "namespace": "gabecspace/map",
+      "service": "MVIO",
+      "require": "MVRP_Map",
+      "connect": "secure=true;server=mvserver-production-3a67.up.railway.app:443;session=RP1",
+      "bAuth":   false,
+      "RootUrl": "https://mvserver-production-3a67.up.railway.app",
+      "Scene":   1
+   }
+}
+
+
